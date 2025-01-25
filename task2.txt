@@ -1,0 +1,15 @@
+#انشاء قاموس جهات اتصال 
+contacts={ "karema" : "01123456",
+          "ahmed" : "010223344",
+        "mohamed"  : "012076543",
+          "hisham" : "011987650"}
+#طباعه الاسماء ف القاموس 
+print("contacts name")
+for name in contacts:
+     print(name)
+# للبحث عن جهات الاتصال 
+search_name =input("enter the name to search for:")
+if search_name in contacts:
+   print(search_name ,  "phone number is" , contacts[search_name])
+else:
+    print(search_name)
